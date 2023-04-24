@@ -1,6 +1,6 @@
 Name:
 
-What did you do since yesterday:
+What you did since yesterday:
 
 Difficulties faced: 
 
