@@ -5,6 +5,8 @@
     <meta name="author" content="Zihan Peng">
     <title>This is the Meeting Minutes</title>
     <link rel="shortcut icon" type="image/png" href="icon/icon.PNG">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -41,14 +43,14 @@
 
       <section>
         <h4>Unfinished things from last lab</h4>
-        <p>We <em>need to</em> <span>practice more</span> with <strong>GitHub</strong> features.</p>
+        <p id="p1">We <em>need to</em> <span>practice more</span> with <strong>GitHub</strong> features.</p>
       </section>
 
       <hr>
 
       <section>
         <h4>New things in this lab</h4>
-        <p>We <em>need to</em> become more familiar with <strong>HTML</strong>.</p>
+        <p Attribute="newThing">We <em>need to</em> become more familiar with <strong>HTML</strong>.</p>
       </section>
 
       <hr>
@@ -66,7 +68,7 @@
 
       <section>
         <h4>Meeting recordings</h4>
-        <p>This is an image from the meeting:</p>
+        <p class="image">This is an image from the meeting:</p>
           <img src="icon/lab2-img.PNG" alt="GitHub picture" width="400" height="200">
         <p>This is an audio from the meeting:</p>
           <audio controls>
@@ -85,7 +87,7 @@
         <fieldset>
           <legend>Please fill out the following information if you have suggestions:</legend>
             <form action="https://www.google.com/" method="get">
-              <p><label for="suggestion">Suggestion:</label></p>
+              <label for="suggestion">Suggestion:</label><br>
               <textarea id="suggestion" name="suggestion" rows="4" cols="50">Please provide any suggestion you have for our meeting.</textarea>
               
               <br><br>
@@ -106,9 +108,9 @@
                   <option value="no">No</option>
                 </select>
 
-              <br>
+              <br><br>
 
-              <p>Do you want to be contacted?<br></p>
+              <label for="contact">Do you want to be contacted?</label><br>
               <input type="radio" id="contactYes" name="contact" value="Yes" />
               <label for="contactYes">Yes</label>
               <input type="radio" id="contactNo" name="contact" value="no" />
@@ -145,7 +147,19 @@
             <summary>Meeting details</summary>
             <p>This meeting will be hold on Sunday from 1 p.m. to 5 p.m. <br> Please use 00000000 to join this zoom meeting.</p>
         </details>
+
+        <div class="flexbox">
+          <div style="order: 2">1</div>
+          <div style="flex-basis: 100px">2</div>
+          <div style="flex-grow: 0.1">3</div>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
     </footer>
- 
   </body>
 </html>
